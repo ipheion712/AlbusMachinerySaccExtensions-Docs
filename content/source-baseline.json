@@ -1,0 +1,724 @@
+{
+  "reviewedOn": "2026-10-14",
+  "scope": "Source and serialized asset review; no Unity or multi-player runtime verification.",
+  "files": [
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_BallAIController/Script/AMSE_BallAIController.cs",
+      "article": "ball-ai",
+      "sha256": "ea6470363c1ff033143f5f44f2ac3b284343ee9651474e1bdbfe4b1d664cc98b",
+      "fields": [
+        {
+          "name": "SAVControl",
+          "type": "UdonSharpBehaviour",
+          "codeDefault": null
+        },
+        {
+          "name": "VehicleForwardTransform",
+          "type": "Transform",
+          "codeDefault": null
+        },
+        {
+          "name": "RollAxis",
+          "type": "Transform",
+          "codeDefault": null
+        },
+        {
+          "name": "PitchAxis",
+          "type": "Transform",
+          "codeDefault": null
+        },
+        {
+          "name": "RollAxisVector",
+          "type": "Vector3",
+          "codeDefault": "new Vector3(0f, 0f, 1f)"
+        },
+        {
+          "name": "PitchAxisVector",
+          "type": "Vector3",
+          "codeDefault": "new Vector3(1f, 0f, 0f)"
+        },
+        {
+          "name": "RollDirection",
+          "type": "float",
+          "codeDefault": "-1f"
+        },
+        {
+          "name": "PitchDirection",
+          "type": "float",
+          "codeDefault": "1f"
+        }
+      ]
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_RadarAltimeterController/Script/AMSE_RadarAltimeterController.cs",
+      "article": "radar-altimeter",
+      "sha256": "86be055120a366a2232ce0a0272bdccf849021124e6191ad803ef032af0ec192",
+      "fields": [
+        {
+          "name": "gaugeAnimator",
+          "type": "Animator",
+          "codeDefault": null
+        },
+        {
+          "name": "radarAltitudeParameterName",
+          "type": "string",
+          "codeDefault": "\"raderAlt\""
+        },
+        {
+          "name": "decisionHeightParameterName",
+          "type": "string",
+          "codeDefault": "\"decisionHeight\""
+        },
+        {
+          "name": "underDHParameterName",
+          "type": "string",
+          "codeDefault": "\"underDH\""
+        },
+        {
+          "name": "useFeetUnit",
+          "type": "bool",
+          "codeDefault": "true"
+        },
+        {
+          "name": "maxAltitude",
+          "type": "float",
+          "codeDefault": "2500.0f"
+        },
+        {
+          "name": "maxRaycastDistance",
+          "type": "float",
+          "codeDefault": "2500.0f"
+        },
+        {
+          "name": "decisionHeight",
+          "type": "float",
+          "codeDefault": "200.0f"
+        },
+        {
+          "name": "layerMask",
+          "type": "LayerMask",
+          "codeDefault": null
+        },
+        {
+          "name": "smoothSpeed",
+          "type": "float",
+          "codeDefault": "5.0f"
+        },
+        {
+          "name": "updateInterval",
+          "type": "float",
+          "codeDefault": "0.1f"
+        }
+      ]
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_LoadGaugeController/Script/AMSE_LoadGaugeController.cs",
+      "article": "load-gauge",
+      "sha256": "c5ce61778e32b3c0b6d979a837d0623ad6bb6fa98ce512190125ec8e42275f4b",
+      "fields": [
+        {
+          "name": "DFUNC_Grapple",
+          "type": "UdonSharpBehaviour",
+          "codeDefault": null
+        },
+        {
+          "name": "gaugeAnimator",
+          "type": "Animator",
+          "codeDefault": null
+        },
+        {
+          "name": "parameterName",
+          "type": "string",
+          "codeDefault": null
+        },
+        {
+          "name": "maxWeight",
+          "type": "float",
+          "codeDefault": null
+        },
+        {
+          "name": "smoothSpeed",
+          "type": "float",
+          "codeDefault": "5f"
+        },
+        {
+          "name": "ropeTautLength",
+          "type": "float",
+          "codeDefault": "10f"
+        },
+        {
+          "name": "slackThreshold",
+          "type": "float",
+          "codeDefault": "0.05f"
+        },
+        {
+          "name": "tautThreshold",
+          "type": "float",
+          "codeDefault": "0.02f"
+        },
+        {
+          "name": "syncThreshold",
+          "type": "float",
+          "codeDefault": "0.001f"
+        }
+      ]
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_RotorStall/Script/AMSE_RotorStall.cs",
+      "article": "rotor-stall",
+      "sha256": "ac76e93f464d78eb720b195ba7210e75c319c93a4b7a2e8129bd961044689df7",
+      "fields": [
+        {
+          "name": "SAVControl",
+          "type": "UdonSharpBehaviour",
+          "codeDefault": null
+        },
+        {
+          "name": "RotorRPM",
+          "type": "float",
+          "codeDefault": "1.0f"
+        },
+        {
+          "name": "StallDecayRate",
+          "type": "float",
+          "codeDefault": "0.2f"
+        },
+        {
+          "name": "RotorRecoveryRate",
+          "type": "float",
+          "codeDefault": "0.2f"
+        },
+        {
+          "name": "StallTriggerThrottle",
+          "type": "float",
+          "codeDefault": "0.9f"
+        },
+        {
+          "name": "StallRecoveryThrottle",
+          "type": "float",
+          "codeDefault": "0.85f"
+        },
+        {
+          "name": "MaxThrottleTime",
+          "type": "float",
+          "codeDefault": "5.0f"
+        },
+        {
+          "name": "OverThrottleCooldownRate",
+          "type": "float",
+          "codeDefault": "1.0f"
+        },
+        {
+          "name": "syncInterval",
+          "type": "float",
+          "codeDefault": "0.1f"
+        },
+        {
+          "name": "rotorRPMSyncThreshold",
+          "type": "float",
+          "codeDefault": "0.01f"
+        },
+        {
+          "name": "overThrottleTimerSyncThreshold",
+          "type": "float",
+          "codeDefault": "0.1f"
+        },
+        {
+          "name": "TargetAnimator",
+          "type": "Animator",
+          "codeDefault": null
+        },
+        {
+          "name": "BoolParameterName",
+          "type": "string",
+          "codeDefault": "\"IsStalling\""
+        }
+      ]
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_HeliGroundCyclic/Script/AMSE_HeliGroundCyclic.cs",
+      "article": "heli-ground-cyclic",
+      "sha256": "a368ef041f2dd67f736d76a6be002d06dff5b0c5fc7d5ebbbc56a4248b1c8b7c",
+      "fields": [
+        {
+          "name": "SAVControl",
+          "type": "SaccAirVehicle",
+          "codeDefault": null
+        },
+        {
+          "name": "GroundDetector",
+          "type": "Transform",
+          "codeDefault": null
+        },
+        {
+          "name": "GroundFullEffectDistance",
+          "type": "float",
+          "codeDefault": "0.22f"
+        },
+        {
+          "name": "GroundReleaseDistance",
+          "type": "float",
+          "codeDefault": "0.40f"
+        },
+        {
+          "name": "GroundMinimumBlendBeforeTakeoff",
+          "type": "float",
+          "codeDefault": "0.30f"
+        },
+        {
+          "name": "GroundRayMissGrace",
+          "type": "float",
+          "codeDefault": "0.10f"
+        },
+        {
+          "name": "TouchDownBlendInTime",
+          "type": "float",
+          "codeDefault": "0.15f"
+        },
+        {
+          "name": "UseTakeOffFinalBlend",
+          "type": "bool",
+          "codeDefault": "true"
+        },
+        {
+          "name": "TakeOffReleaseTime",
+          "type": "float",
+          "codeDefault": "0.15f"
+        },
+        {
+          "name": "CyclicDeadzone",
+          "type": "float",
+          "codeDefault": "0.075f"
+        },
+        {
+          "name": "CyclicSaturationPoint",
+          "type": "float",
+          "codeDefault": "0.35f"
+        },
+        {
+          "name": "GroundMaxForwardTilt",
+          "type": "float",
+          "codeDefault": "8f"
+        },
+        {
+          "name": "CyclicForwardSign",
+          "type": "float",
+          "codeDefault": "1f"
+        },
+        {
+          "name": "TiltDirectionSign",
+          "type": "float",
+          "codeDefault": "-1f"
+        },
+        {
+          "name": "SyncUpdateRate",
+          "type": "float",
+          "codeDefault": "0.2f"
+        },
+        {
+          "name": "SyncThreshold",
+          "type": "float",
+          "codeDefault": "0.001f"
+        }
+      ]
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_EngineStartupRespawnReset/Script/AMSE_EngineStartupRespawnReset.cs",
+      "article": "engine-startup-reset",
+      "sha256": "0b3c84258741e2a083391b8e3fd9d9e330b7d7d4fddb07963a9510a279e3f002",
+      "fields": [
+        {
+          "name": "EntityControl",
+          "type": "SaccEntity",
+          "codeDefault": null
+        },
+        {
+          "name": "ToggleEngine",
+          "type": "DFUNC_ToggleEngine",
+          "codeDefault": null
+        },
+        {
+          "name": "SendStartupCancelEvent",
+          "type": "bool",
+          "codeDefault": "true"
+        }
+      ]
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_SoundController/Script/AMSE_SoundController.cs",
+      "article": "sound-controller",
+      "sha256": "af9b296c84aa4a565d2c715b3e47a15766480b918894c7956392b3f0d4abf348",
+      "fields": [
+        {
+          "name": "SoundControl",
+          "type": "SAV_SoundController",
+          "codeDefault": null
+        },
+        {
+          "name": "SAVControl",
+          "type": "UdonSharpBehaviour",
+          "codeDefault": null
+        },
+        {
+          "name": "HelicopterPlaneIdlePitchMin",
+          "type": "float",
+          "codeDefault": "1f"
+        },
+        {
+          "name": "HelicopterPlaneIdlePitchMax",
+          "type": "float",
+          "codeDefault": "1.03f"
+        },
+        {
+          "name": "HelicopterPlaneInsidePitchMin",
+          "type": "float",
+          "codeDefault": "1f"
+        },
+        {
+          "name": "HelicopterPlaneInsidePitchMax",
+          "type": "float",
+          "codeDefault": "1.03f"
+        },
+        {
+          "name": "MaxPitchFollowSpeed",
+          "type": "float",
+          "codeDefault": "8f"
+        },
+        {
+          "name": "OutsideIdleTargetVolume",
+          "type": "float",
+          "codeDefault": "1f"
+        },
+        {
+          "name": "InsideIdleTargetVolume",
+          "type": "float",
+          "codeDefault": "1f"
+        },
+        {
+          "name": "FadeStartupSoundOnCancel",
+          "type": "bool",
+          "codeDefault": "false"
+        },
+        {
+          "name": "StartupCancelFadeDuration",
+          "type": "float",
+          "codeDefault": "1.5f"
+        },
+        {
+          "name": "StartupCancelEndPitchRatio",
+          "type": "float",
+          "codeDefault": "0.55f"
+        }
+      ]
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_SightView/Script/AMSE_SightViewController.cs",
+      "article": "sight-view",
+      "sha256": "7f1aaefb53b39da78f70699c6125adf630f4202fed1c93cb1b6644a16a12d13f",
+      "fields": [
+        {
+          "name": "ViewOverlay",
+          "type": "GameObject",
+          "codeDefault": null
+        },
+        {
+          "name": "SightImage",
+          "type": "Renderer",
+          "codeDefault": null
+        },
+        {
+          "name": "Background",
+          "type": "GameObject",
+          "codeDefault": null
+        },
+        {
+          "name": "SightRenderTexture",
+          "type": "RenderTexture",
+          "codeDefault": null
+        },
+        {
+          "name": "OverlayDistance",
+          "type": "float",
+          "codeDefault": "1f"
+        },
+        {
+          "name": "PositionOffset",
+          "type": "Vector3",
+          "codeDefault": "Vector3.zero"
+        },
+        {
+          "name": "RotationOffset",
+          "type": "Vector3",
+          "codeDefault": "Vector3.zero"
+        },
+        {
+          "name": "OverlayScale",
+          "type": "Vector3",
+          "codeDefault": "new Vector3(3f, 3f, 1f)"
+        },
+        {
+          "name": "StartDisabled",
+          "type": "bool",
+          "codeDefault": "true"
+        }
+      ]
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_SightView/Script/DFUNC_AMSE_SightView.cs",
+      "article": "sight-view",
+      "sha256": "9b59132edb44d51aba81113450191a7576a8e50400a1d9eb2823c08f2e05f801",
+      "fields": [
+        {
+          "name": "SightViewController",
+          "type": "AMSE_SightViewController",
+          "codeDefault": null
+        },
+        {
+          "name": "Dial_Funcon",
+          "type": "GameObject",
+          "codeDefault": null
+        },
+        {
+          "name": "Dial_Funcon_Array",
+          "type": "GameObject[]",
+          "codeDefault": null
+        },
+        {
+          "name": "SightAnimator",
+          "type": "Animator",
+          "codeDefault": null
+        },
+        {
+          "name": "AnimatorBoolName",
+          "type": "string",
+          "codeDefault": "\"SightViewEnabled\""
+        },
+        {
+          "name": "OverlayEnableDelay",
+          "type": "float",
+          "codeDefault": null
+        },
+        {
+          "name": "AnimatorDisableDelay",
+          "type": "float",
+          "codeDefault": null
+        }
+      ]
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_AnimatorParameterRelay/Script/AMSE_AnimatorParameterRelay.cs",
+      "article": "animator-relay",
+      "sha256": "0e737e2dde6966a873b71a82b05462d760323e133badc7e84ce594b37d1040c1",
+      "fields": [
+        {
+          "name": "sourceAnimator",
+          "type": "Animator",
+          "codeDefault": null
+        },
+        {
+          "name": "parameterType",
+          "type": "AMSE_AnimatorParameterType",
+          "codeDefault": "AMSE_AnimatorParameterType.Bool"
+        },
+        {
+          "name": "parameterName",
+          "type": "string",
+          "codeDefault": null
+        },
+        {
+          "name": "targetAnimators",
+          "type": "Animator[]",
+          "codeDefault": null
+        },
+        {
+          "name": "checkInterval",
+          "type": "float",
+          "codeDefault": "0f"
+        },
+        {
+          "name": "floatChangeThreshold",
+          "type": "float",
+          "codeDefault": "0.0001f"
+        },
+        {
+          "name": "syncOnStart",
+          "type": "bool",
+          "codeDefault": "true"
+        }
+      ]
+    },
+    {
+      "path": "Assets/SaccFlightAndVehicles/Scripts/Other/SaccGaugeController.cs",
+      "article": "flight-instruments",
+      "sha256": "1a6b62fba03a6043a5c464c865b53c10587f818a6e53651f60038d1678c5b67b",
+      "fields": [
+        {
+          "name": "SAVControl",
+          "type": "UdonSharpBehaviour",
+          "codeDefault": null
+        },
+        {
+          "name": "VehicleForwardTransform",
+          "type": "Transform",
+          "codeDefault": null
+        },
+        {
+          "name": "DialsAnimator",
+          "type": "Animator[]",
+          "codeDefault": null
+        },
+        {
+          "name": "Horizon_PitchAxis",
+          "type": "Vector3",
+          "codeDefault": "new Vector3(1, 0, 0)"
+        },
+        {
+          "name": "Horizon_RollAxis",
+          "type": "Vector3",
+          "codeDefault": "new Vector3(0, -1, 0)"
+        },
+        {
+          "name": "AltitudeFloatName100",
+          "type": "string",
+          "codeDefault": "\"altitude100\""
+        },
+        {
+          "name": "AltitudeFloatName1000",
+          "type": "string",
+          "codeDefault": "\"altitude1000\""
+        },
+        {
+          "name": "AltitudeFloatName10000",
+          "type": "string",
+          "codeDefault": "\"altitude10000\""
+        },
+        {
+          "name": "AltitudeConversion",
+          "type": "float",
+          "codeDefault": "3.28084f"
+        },
+        {
+          "name": "FuelFloatName",
+          "type": "string",
+          "codeDefault": "\"fuel\""
+        },
+        {
+          "name": "MaxSpeed",
+          "type": "float",
+          "codeDefault": "257.222221222f"
+        },
+        {
+          "name": "SpeedFloatName",
+          "type": "string",
+          "codeDefault": "\"speed\""
+        },
+        {
+          "name": "EngineFloatName",
+          "type": "string",
+          "codeDefault": "\"engine\""
+        },
+        {
+          "name": "SlipFloatName",
+          "type": "string",
+          "codeDefault": "\"slip\""
+        },
+        {
+          "name": "MaxSlip",
+          "type": "float",
+          "codeDefault": "15f"
+        },
+        {
+          "name": "Horizon",
+          "type": "Transform[]",
+          "codeDefault": null
+        },
+        {
+          "name": "AscentFloatName",
+          "type": "string",
+          "codeDefault": "\"ascent\""
+        },
+        {
+          "name": "MaxAscent",
+          "type": "float",
+          "codeDefault": "5000"
+        },
+        {
+          "name": "AscentConversion",
+          "type": "float",
+          "codeDefault": "3.28084f"
+        },
+        {
+          "name": "CompassAxis",
+          "type": "byte",
+          "codeDefault": "2"
+        },
+        {
+          "name": "CompassOffset",
+          "type": "float",
+          "codeDefault": null
+        },
+        {
+          "name": "CompassFloatName",
+          "type": "string",
+          "codeDefault": "\"compass\""
+        }
+      ]
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_BallAIController/BallAttitudeIndicator.prefab",
+      "sha256": "5c2f6b22e7a26875a25411f61afb16e80181e47291f6123321b82f3c0afbbfe6"
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_RadarAltimeterController/RadarAltimeter.prefab",
+      "sha256": "2941230f2cb331f1947b603a4326c6575260f0bb6c84cc2393d2180026b59f3e"
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_FlightInstruments_TypeA/FlightInstrumentsA.prefab",
+      "sha256": "74e6ec3ba26a52425ce25bbe6a01d1f329dcf65439846b2cd578ee5445b9e6c1"
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_SightView/AMSE_SightView.prefab",
+      "sha256": "25f5c26c0fec72cfa19e51467c24e43a136dbbf9f6868855cc8cd3e261e18dc9"
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_FlightInstruments_TypeA/Animation/FlightInstrumentsA.controller",
+      "sha256": "512b0ccd5fcdf29fef5a9f910f8faec8f17c7b936ffc3550caba1fc6184988a2"
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_RadarAltimeterController/Animation/RadarAltimeter.controller",
+      "sha256": "daea71f9ac38137b9000bf2250711d5cda3e6a3b6dff9e93038a8986a7b9d82f"
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_BallAIController/Animation/BallAI.controller",
+      "sha256": "fe660808601ce0f604687b0dccfc54012be12784ad7cc7cc03b60c661172a633"
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/AMSE_SightView/docs/NETWORKING_RULES.md",
+      "sha256": "3208915db77ad76a161d18f06b04d6a6ffb01d57e6c4338db094dd6cbfb668f4"
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/SaccExtensions/Shared/LICENSE.txt",
+      "sha256": "857ed08f39ee9728aa3b6c754e84e200f9110cb49198ab0df878187c567b982f"
+    },
+    {
+      "path": "Assets/SaccFlightAndVehicles/Scripts/SaccEntity.cs",
+      "sha256": "bb5c286ca3c63d007785fc0893380589ff83de3295c8dc33434d4864bc56e6c6"
+    },
+    {
+      "path": "Assets/SaccFlightAndVehicles/package.json",
+      "sha256": "1ad9a08755cdb387ff83f52b0e548fd639e1307fcc4babbd4850d1b95b670d2b"
+    },
+    {
+      "path": "Assets/ALBUSMACHINERY/LoadGauge/Animation/LoadGauge.controller",
+      "sha256": "f6cf44048a30aa5446341d64ebadf1d16e866cba9249acbe382f4e944a8ba67d"
+    },
+    {
+      "path": "ProjectSettings/ProjectVersion.txt",
+      "sha256": "0599d0a5e5f574ce3aaf02f6f98a477bd75b97ddd6a1cf9a9466c603c3d7b6ca"
+    },
+    {
+      "path": "Packages/vpm-manifest.json",
+      "sha256": "c1b91292735f0bc1a117319585bce9d20898237d78f958d33178832edd4ed63b"
+    }
+  ]
+}

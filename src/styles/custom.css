@@ -1,0 +1,25 @@
+:root {
+  --sl-color-accent-low: #142d32;
+  --sl-color-accent: #65cec3;
+  --sl-color-accent-high: #b8eee5;
+  --sl-font: 'Segoe UI', 'Yu Gothic', 'Meiryo', sans-serif;
+  --sl-content-width: 52rem;
+}
+:root[data-theme='light'] {
+  --sl-color-accent-low: #d8f3ee;
+  --sl-color-accent: #08796f;
+  --sl-color-accent-high: #10483f;
+}
+.site-title { letter-spacing: 0.06em; font-size: 1rem; }
+.sl-markdown-content { line-height: 1.85; }
+.sl-markdown-content table { font-size: 0.9rem; }
+.sl-markdown-content td { vertical-align: top; }
+.sl-markdown-content code { overflow-wrap: anywhere; }
+.sl-markdown-content table code { white-space: nowrap; overflow-wrap: normal; word-break: normal; }
+.sl-markdown-content td:last-child { min-width: 12rem; }
+.sl-markdown-content h2 { letter-spacing: 0.01em; }
+.hero h1 { font-size: clamp(2.25rem, 4.5vw, 3.6rem); font-weight: 750; letter-spacing: -0.025em; text-wrap: balance; }
+.hero .tagline { max-width: 42rem; }
+@media (max-width: 50rem) {
+  .sl-markdown-content table { font-size: 0.82rem; }
+}

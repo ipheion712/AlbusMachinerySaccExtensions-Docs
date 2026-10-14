@@ -1,0 +1,24 @@
+{
+  "name": "albusmachinery-sacc-extensions-docs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "node scripts/astro.mjs dev --host 127.0.0.1",
+    "check": "node scripts/astro.mjs check",
+    "build": "node scripts/astro.mjs build && node scripts/check-site.mjs",
+    "preview": "node scripts/astro.mjs preview --host 127.0.0.1",
+    "audit:sources": "node scripts/audit-sources.mjs"
+  },
+  "dependencies": {
+    "@astrojs/check": "0.9.10",
+    "@astrojs/markdown-remark": "7.3.0",
+    "@astrojs/starlight": "0.42.6",
+    "astro": "7.2.10",
+    "typescript": "5.9.3"
+  }
+}

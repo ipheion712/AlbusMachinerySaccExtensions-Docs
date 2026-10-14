@@ -1,0 +1,44 @@
+---
+title: Sacc Extensions マニュアル
+description: ALBUS MACHINERY の SaccFlightAndVehicles 用アドオンを、導入から調整まで。
+template: splash
+hero:
+  title: 機体に、もう一つの機能を。
+  tagline: ALBUS MACHINERY Sacc Extensions の導入・設定ガイド。計器、エンジン、サウンド、照準ビューを、あなたの機体に組み込みます。
+  actions:
+    - text: 導入を始める
+      link: ./getting-started/installation/
+      icon: right-arrow
+      variant: primary
+    - text: アドオンを探す
+      link: ./addons/
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## 機能から探す
+
+<CardGrid>
+  <LinkCard title="飛行を読み取る計器" description="姿勢計、電波高度計、吊り荷の荷重計、複合計器セット。" href="./addons/#計器" />
+  <LinkCard title="エンジンと飛行挙動" description="ローター失速、接地中の補正、始動中のリスポーン処理。" href="./addons/#エンジン飛行挙動" />
+  <LinkCard title="音・視界・表示" description="機内外の音、頭に追従する照準ビュー、Animator 間の値の転送。" href="./addons/#音視界表示" />
+  <LinkCard title="組み合わせて使う" description="ヘリコプターへの組み込み例と、確認する順番。" href="./examples/helicopter/" />
+</CardGrid>
+
+## 導入の流れ
+
+<CardGrid>
+  <Card title="01 / 準備する">対応環境と依存関係を確認し、機体 Prefab の作業用コピーを用意します。</Card>
+  <Card title="02 / 接続する">アドオンを配置し、参照先と SaccEntity の登録を設定します。</Card>
+  <Card title="03 / 調整する">項目名・単位・初期値を確認し、機体や計器の目盛りに合わせます。</Card>
+  <Card title="04 / 確認する">単体の動作、リスポーン、所有権の交代、途中参加の順に確認します。</Card>
+</CardGrid>
+
+## このマニュアルについて
+
+AMSE 系 10 種類の構成と設定を掲載しています。2026 年 10 月 14 日時点のソースと Prefab を参照した初版です。Unity 内の導入再現と VRChat の複数人動作検証は、文書作成時点では未実施です。
+
+設定表の「コード初期値」は新規コンポーネントの値です。配布 Prefab に別の値が保存されている場合は、各ページでその違いを説明しています。
+
+[対応環境](./getting-started/requirements/) · [よくある問題](./getting-started/troubleshooting/) · [更新・移行](./changelog/)

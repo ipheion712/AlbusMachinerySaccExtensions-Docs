@@ -1,0 +1,6 @@
+storeDir: .pnpm-store
+fetchRetries: 1
+fetchTimeout: 30000
+allowBuilds:
+  esbuild: true
+  sharp: true

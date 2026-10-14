@@ -1,0 +1,14 @@
+{
+  "tableOfContents.overview": "ページ先頭",
+  "heading.anchorLabel": "「{{title}}」へのリンク",
+  "pagefind.clear_search": "検索語を消去",
+  "pagefind.load_more": "結果をさらに表示",
+  "pagefind.search_label": "サイト内を検索",
+  "pagefind.filters_label": "絞り込み",
+  "pagefind.zero_results": "「[SEARCH_TERM]」に一致する結果はありません",
+  "pagefind.many_results": "「[SEARCH_TERM]」の検索結果：[COUNT] 件",
+  "pagefind.one_result": "「[SEARCH_TERM]」の検索結果：1 件",
+  "pagefind.alt_search": "「[SEARCH_TERM]」の結果はありません。「[DIFFERENT_TERM]」の結果を表示します",
+  "pagefind.search_suggestion": "「[SEARCH_TERM]」の結果はありません。次の検索語を試してください",
+  "pagefind.searching": "「[SEARCH_TERM]」を検索中…"
+}

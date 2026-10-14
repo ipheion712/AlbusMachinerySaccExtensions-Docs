@@ -1,0 +1,35 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex" />
+    <title>ページが見つかりません | ALBUS MACHINERY</title>
+    <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
+  </head>
+  <body>
+    <main>
+      <p class="brand">ALBUS MACHINERY / SACC EXTENSIONS</p>
+      <p class="number">404</p>
+      <h1>ページが見つかりません</h1>
+      <p>アドオン一覧から、目的のマニュアルを探してください。</p>
+      <nav aria-label="移動先">
+        <a href={`${base}addons/`}>アドオン一覧</a>
+        <a href={base}>トップへ戻る</a>
+      </nav>
+    </main>
+  </body>
+</html>
+<style>
+  :global(body) { margin: 0; background: #142d32; color: #e8f8f4; font-family: 'Segoe UI', 'Yu Gothic', 'Meiryo', sans-serif; }
+  main { max-width: 42rem; padding: 5rem 1.5rem; margin: auto; line-height: 1.8; }
+  .brand { color: #b8eee5; font-size: 0.8rem; letter-spacing: 0.12em; }
+  .number { margin: 2rem 0 0; font-size: 5rem; font-weight: 700; color: #65cec3; }
+  h1 { font-size: clamp(1.5rem, 5vw, 2.2rem); }
+  nav { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+  a { color: #b8eee5; text-underline-offset: 0.3em; }
+  a:focus-visible { outline: 2px solid #65cec3; outline-offset: 6px; }
+</style>
