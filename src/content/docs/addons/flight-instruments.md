@@ -1,5 +1,5 @@
 ---
-title: Flight Instruments Type A
+title: AMSE_FlightInstruments_TypeA
 description: SaccGaugeController に接続する複合計器 Prefab の設定。
 ---
 
@@ -71,7 +71,7 @@ description: SaccGaugeController に接続する複合計器 Prefab の設定。
 | 全計器が動かない | DialsAnimator の配列、Controller、パラメーター名を確認 |
 | 高度が地面の高さと違う | SeaLevel を基準とした高度であることを確認 |
 | 目盛りが合わない | Prefab の換算係数と最大値を、アニメーションに合わせて確認 |
-| 姿勢計だけ動かない | Prefab の Horizon は空。球形姿勢計は [Ball AI](../ball-ai/) を使用 |
+| 姿勢計だけ動かない | Prefab の Horizon は空。球形姿勢計は [AMSE_BallAIController](../ball-ai/) を使用 |
 
 ## 参照元
 

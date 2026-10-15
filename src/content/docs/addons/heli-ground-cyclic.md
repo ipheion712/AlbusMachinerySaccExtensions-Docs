@@ -1,5 +1,5 @@
 ---
-title: 接地中のサイクリック補正
+title: AMSE_HeliGroundCyclic
 description: VTOLOnly のヘリコプターで、接地中の前進方向の推力を補正します。
 ---
 

@@ -27,7 +27,7 @@ description: ExtensionUdonBehaviours と左右のダイヤル配列の使い分�
 3. 新しい要素に、アドオンの UdonSharp Behaviour を割り当てます。
 4. 既存要素が削除・上書きされていないことを確認します。
 
-SaccEntity は登録された Behaviour に `EntityControl` を設定します。例えば RotorStall の `EntityControl` は非シリアライズの実行時参照で、Inspector で手動設定する項目ではありません。
+SaccEntity は登録された Behaviour に `EntityControl` を設定します。例えば AMSE_RotorStall の `EntityControl` は非シリアライズの実行時参照で、Inspector で手動設定する項目ではありません。
 
 ## ダイヤル機能を追加する
 
@@ -36,14 +36,14 @@ SaccEntity は登録された Behaviour に `EntityControl` を設定します�
 3. アイコンや選択位置は、既存機体のダイヤル構成に合わせて設定します。
 4. 機体にある Desktop 入力の仕組みから、必要に応じて `KeyboardInput` を呼び出します。
 
-`KeyboardInput` は呼び出し口です。照準ビュー自体がキーボードの特定キーを監視するわけではありません。
+`KeyboardInput` は呼び出し口です。AMSE_SightView 自体がキーボードの特定キーを監視するわけではありません。
 
 ## 同じ Behaviour を重複登録しない
 
-参照した SaccEntity は、拡張配列と両方のダイヤル配列にイベントを送ります。ダイヤルに入れた DFUNC は拡張配列へ重複追加せず、同じイベントを二度受けない構成にします。照準ビューの Controller は別の Behaviour なので、拡張配列への登録対象です。
+参照した SaccEntity は、拡張配列と両方のダイヤル配列にイベントを送ります。ダイヤルに入れた DFUNC は拡張配列へ重複追加せず、同じイベントを二度受けない構成にします。AMSE_SightView の Controller は別の Behaviour なので、拡張配列への登録対象です。
 
 ## 所有権の確認
 
-同期する機能では、機体の操縦者が変わるときにアドオンの GameObject の所有権も追従することを確認します。荷重計は、自身の GameObject の owner だけが荷重を計算・送信します。
+同期する機能では、機体の操縦者が変わるときにアドオンの GameObject の所有権も追従することを確認します。AMSE_LoadGaugeController は、自身の GameObject の owner だけが荷重を計算・送信します。
 
 [共通の導入手順へ戻る](../installation/)

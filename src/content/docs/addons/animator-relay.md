@@ -1,5 +1,5 @@
 ---
-title: Animator パラメーター転送
+title: AMSE_AnimatorParameterRelay
 description: 一つの Animator の Bool / Int / Float を、複数の Animator に転送します。
 ---
 
@@ -42,7 +42,7 @@ Start で初回確認し、その後は `PostLateUpdate` で値を監視しま�
 
 ## 使用例
 
-RotorStall の TargetAnimator に `IsStalling` Bool を設定し、この Relay で操縦席と助手席の警告 Animator に同じ値を転送できます。転送先にも `IsStalling` Bool を作成します。
+AMSE_RotorStall の TargetAnimator に `IsStalling` Bool を設定し、この AMSE_AnimatorParameterRelay で操縦席と助手席の警告 Animator に同じ値を転送できます。転送先にも `IsStalling` Bool を作成します。
 
 ## 問題への対処
 

@@ -1,5 +1,5 @@
 ---
-title: 吊り荷の荷重計
+title: AMSE_LoadGaugeController
 description: Grapple に接続した吊り荷の質量を、ロープの張りに応じて表示します。
 ---
 

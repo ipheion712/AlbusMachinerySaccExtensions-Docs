@@ -1,5 +1,5 @@
 ---
-title: 電波高度計
+title: AMSE_RadarAltimeterController
 description: 下向きの距離を測り、高度と Decision Height を Animator に送ります。
 ---
 

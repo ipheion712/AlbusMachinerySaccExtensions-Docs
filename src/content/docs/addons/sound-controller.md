@@ -1,5 +1,5 @@
 ---
-title: サウンド制御
+title: AMSE_SoundController
 description: SAV_SoundController の始動音・機内外切り替え・エンジンピッチを補助します。
 ---
 
@@ -56,7 +56,7 @@ description: SAV_SoundController の始動音・機内外切り替え・エン�
 | 初期化エラー | SoundControl、SAVControl、拡張登録を確認 |
 | ピッチが変わらない | エンジン状態、IsHelicopter、Min / Max の差を確認 |
 | 機内外の切り替えが合わない | 元の SoundControl のドア判定・機内外 AudioSource を確認 |
-| 中断で音が残る | 中断イベント、フェード設定、[始動リセット](../engine-startup-reset/) の設定を確認 |
+| 中断で音が残る | 中断イベント、フェード設定、[AMSE_EngineStartupRespawnReset](../engine-startup-reset/) の設定を確認 |
 
 ## 参照元
 

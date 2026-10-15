@@ -1,5 +1,5 @@
 ---
-title: 始動中のリスポーン処理
+title: AMSE_EngineStartupRespawnReset
 description: エンジン始動が中断されたときに、始動表示と通知をリセットします。
 ---
 
@@ -41,7 +41,7 @@ description: エンジン始動が中断されたときに、始動表示と通�
 | --- | --- |
 | リセットされない | 拡張登録、始動イベントの受信、ToggleEngine の参照を確認 |
 | Bool が残る | ToggleEngine の DoEngineStartupAnimBool、EngineAnimator、パラメーター名を確認 |
-| 音だけ残る | 中断通知を有効にし、[SoundController](../sound-controller/) の登録・設定を確認 |
+| 音だけ残る | 中断通知を有効にし、[AMSE_SoundController](../sound-controller/) の登録・設定を確認 |
 
 ## 参照元
 

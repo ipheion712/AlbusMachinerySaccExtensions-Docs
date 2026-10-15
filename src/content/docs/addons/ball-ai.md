@@ -1,5 +1,5 @@
 ---
-title: Ball AI / 球形姿勢計
+title: AMSE_BallAIController
 description: 機体のロールとピッチを球形姿勢計に表示します。
 ---
 

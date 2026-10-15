@@ -16,21 +16,21 @@ description: 参照、初期化、Animator、同期の問題を順番に切り�
 
 ## Animator の名前と型
 
-名前は大文字・小文字を含めて一致させます。電波高度計の標準名は `raderAlt` です。一般的な英単語に合わせて `radarAlt` に書き換えると、既存 Controller と一致しなくなることがあります。
+名前は大文字・小文字を含めて一致させます。AMSE_RadarAltimeterController の標準パラメーター名は `raderAlt` です。一般的な英単語に合わせて `radarAlt` に書き換えると、既存 Controller と一致しなくなることがあります。
 
-Float に Bool を送るなど、型が一致しない接続も確認してください。AnimatorParameterRelay は同名・同型のパラメーターを転送します。
+Float に Bool を送るなど、型が一致しない接続も確認してください。AMSE_AnimatorParameterRelay は同名・同型のパラメーターを転送します。
 
 ## コードと Prefab の初期値が違う
 
 Inspector に表示されるのは、シーンや Prefab に保存された値です。コードの初期値を変更しても、既に保存された値が一律に更新されるとは限りません。各記事の Prefab 値を確認してください。
 
-Ball AI の参照 Prefab には、現行スクリプトにない旧設定がシリアライズされています。現行版の調整項目は [姿勢計の設定一覧](../../addons/ball-ai/#設定項目)を基準にします。
+AMSE_BallAIController の参照 Prefab には、現行スクリプトにない旧設定がシリアライズされています。現行版の調整項目は [AMSE_BallAIController の設定一覧](../../addons/ball-ai/#設定項目)を基準にします。
 
 ## 地面や吊り荷の判定
 
-- 電波高度計は計器オブジェクトの `-transform.up` 方向に測定します。配置の向きと LayerMask を確認します。
-- 地上サイクリック補正は GroundDetector、SaccFlight の接地状態、VTOL の角度範囲を確認します。
-- 荷重計は接続状態に加えてロープの張りを判定します。荷物が地面に置かれている間は表示が 0 になる場合があります。
+- AMSE_RadarAltimeterController は計器オブジェクトの `-transform.up` 方向に測定します。配置の向きと LayerMask を確認します。
+- AMSE_HeliGroundCyclic は GroundDetector、SaccFlight の接地状態、VTOL の角度範囲を確認します。
+- AMSE_LoadGaugeController は接続状態に加えてロープの張りを判定します。荷物が地面に置かれている間は表示が 0 になる場合があります。
 
 ## ネットワーク機能の確認
 
@@ -39,7 +39,7 @@ Ball AI の参照 Prefab には、現行スクリプトにない旧設定がシ�
 3. 操縦者を交代し、更新が継続するか確認します。
 4. 状態を変更した後に途中参加し、現在の状態が反映されるか確認します。
 
-照準ビューは「機体の照準器の展開状態」を共有し、「頭の前の映像」は操作したプレイヤーだけに表示します。他人の頭の前に同じ映像が出ないことは想定された動作です。
+AMSE_SightView は「機体の照準器の展開状態」を共有し、「頭の前の映像」は操作したプレイヤーだけに表示します。他人の頭の前に同じ映像が出ないことは想定された動作です。
 
 ## 問題を記録する
 

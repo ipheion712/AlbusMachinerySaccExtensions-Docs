@@ -1,5 +1,5 @@
 ---
-title: ローター失速
+title: AMSE_RotorStall
 description: 高い入力の継続で推力を低下させ、入力を下げると回復させます。
 ---
 

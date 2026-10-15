@@ -1,11 +1,11 @@
 ---
-title: 照準ビュー
+title: AMSE_SightView
 description: 頭に追従するローカル映像と、共有される照準器の展開を設定します。
 ---
 
 ## 概要
 
-照準ビューは二つの Behaviour で構成します。
+`AMSE_SightView` は、頭に追従する照準ビューを表示します。二つの Behaviour で構成します。
 
 - **AMSE_SightViewController**：プレイヤーの頭に追従して RenderTexture を表示。
 - **DFUNC_AMSE_SightView**：ダイヤル操作、展開 Animator、遅延と共有状態を管理。

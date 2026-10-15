@@ -18,17 +18,17 @@ description: 文書の参照環境と、アドオンごとの依存関係。
 
 | 機能 | 必要なもの |
 | --- | --- |
-| Ball AI | 機体の Transform。または `VehicleTransform` を公開する SAVControl |
-| 電波高度計 | 計器 Animator、地面の Collider と Layer |
-| 荷重計 | `DFUNC_Grapple`、吊り荷 Rigidbody、計器 Animator |
-| Flight Instruments Type A | SaccFlight の `SaccGaugeController` と SAVControl |
-| RotorStall / HeliGroundCyclic | SaccAirVehicle と SaccEntity。後者は `VTOLOnly` が必要 |
-| EngineStartupRespawnReset | SaccEntity と `DFUNC_ToggleEngine` |
-| SoundController | `SAV_SoundController` と SAVControl |
-| SightView | 既存の照準 Camera / RenderTexture。展開演出には Animator |
-| AnimatorParameterRelay | 転送元・転送先の Animator Controller |
+| AMSE_BallAIController | 機体の Transform。または `VehicleTransform` を公開する SAVControl |
+| AMSE_RadarAltimeterController | 計器 Animator、地面の Collider と Layer |
+| AMSE_LoadGaugeController | `DFUNC_Grapple`、吊り荷 Rigidbody、計器 Animator |
+| AMSE_FlightInstruments_TypeA | SaccFlight の `SaccGaugeController` と SAVControl |
+| AMSE_RotorStall / AMSE_HeliGroundCyclic | SaccAirVehicle と SaccEntity。後者は `VTOLOnly` が必要 |
+| AMSE_EngineStartupRespawnReset | SaccEntity と `DFUNC_ToggleEngine` |
+| AMSE_SoundController | `SAV_SoundController` と SAVControl |
+| AMSE_SightView | 既存の照準 Camera / RenderTexture。展開演出には Animator |
+| AMSE_AnimatorParameterRelay | 転送元・転送先の Animator Controller |
 
-照準ビューは `VRC.SDK3.UdonNetworkCalling` を使用しています。これを提供しない SDK ではコンパイルできません。対応する最小 SDK バージョンは、この初版では確定していません。
+AMSE_SightView は `VRC.SDK3.UdonNetworkCalling` を使用しています。これを提供しない SDK ではコンパイルできません。対応する最小 SDK バージョンは、この初版では確定していません。
 
 ## 準備
 
